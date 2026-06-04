@@ -8,7 +8,6 @@ async function fetchEpisodios() {
 
     let url = `https://thesimpsonsapi.com/api/episodes?page=${page}`;
     if (temporadaActual) url += `&season=${temporadaActual}`;
-     console.log('URL:', url);
     
     const response = await fetch(url);
     const data = await response.json();
@@ -28,10 +27,9 @@ function renderEpisodios(episodios) {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-            <img src="https://cdn.thesimpsonsapi.com/200/${ep.image_path}" alt="${ep.name}">
+            <img src="https://cdn.thesimpsonsapi.com/200${ep.image_path}" alt="${ep.name}">
             <h3>${ep.name}</h3>
             <p>Description: ${ep.synopsis}</p>
-            <p>Airdate: ${ep.airdate}</p>
             <p>Season: ${ep.season}</p>
             <p>Episode: ${ep.episode_number}</p>
             <button onclick="guardarFav(${ep.id})">Save as Favorite</button>
@@ -39,6 +37,7 @@ function renderEpisodios(episodios) {
         container.appendChild(card);
     });
 }
+
 
 
 fetchEpisodios();
