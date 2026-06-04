@@ -29,7 +29,7 @@ function renderEpisodios(episodios) {
         card.innerHTML = `
             <img src="https://cdn.thesimpsonsapi.com/200${ep.image_path}" alt="${ep.name}">
             <h3>${ep.name}</h3>
-            <p>Description: ${ep.synopsis}</p>
+            <p>${ep.synopsis}</p>
             <p>Season: ${ep.season}</p>
             <p>Episode: ${ep.episode_number}</p>
             <button onclick="guardarFav(${ep.id})">Save as Favorite</button>

@@ -2,7 +2,7 @@
     --primary-color: #ffcc00;
     --secondary-color: #ff6600;
     --text-color: #333333;
-    font-family: 'Los simpsons', sans-serif;
+    font-family: 'Los simpsons';
     margin: 20px;
 }
 
@@ -17,10 +17,24 @@ body {
     padding: 20px;
 }
 
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding-bottom: 40px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
+    margin-top: 20px;
 }
 
 .card {
@@ -35,4 +49,33 @@ body {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+input, select, button {
+    font-family: 'Los simpsons';
+    font-size: 16px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+
+.season-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 20px;
+    width: 150px;
 }
