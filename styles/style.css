@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #ffcc00;
+    --secondary-color: #ff6600;
+    --text-color: #333333;
+    font-family: 'Los simpsons', sans-serif;
+}
+
+@font-face {
+    font-family: 'Los simpsons';
+    src: url('./simpsonfont/Simpsonfont.ttf') format('woff');
+}
+
+body {
+    background-color: #f0e68c;
+    font-family: 'Los simpsons';
+    margin: 0;
+    padding: 20px;
+}
