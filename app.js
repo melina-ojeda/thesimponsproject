@@ -38,6 +38,18 @@ function renderEpisodios(episodios) {
     });
 }
 
+function renderPaginacion(info) {
+  const container = document.getElementById('navegacion');
+  container.innerHTML = `
+    <button onclick="cambiarPagina(-1)" ${page === 1 ? 'disabled' : ''}>Previous</button>
+    <span>Page ${page} of ${info.pages}</span>
+    <button onclick="cambiarPagina(1)" ${page === info.pages ? 'disabled' : ''}>Next</button>
+  `;
+}
 
+function cambiarPagina(direccion) {
+  page += direccion;
+  fetchEpisodios();
+}
 
 fetchEpisodios();
