@@ -12,13 +12,16 @@ Proyecto desarrollado con HTML, CSS y JavaScript vanilla, consumiendola API púb
 # Instrucciones de uso
 
 1) Clonar repositorio
+   
    Desde su consola, corra el siguiente comando
    ´´´
    git clone https://github.com/melina-ojeda/thesimponsproject
    ´´´
 
 3) Ingresar al sitio
+   
    Opción A- Extensión de VSCode **"Live server"**: levante el proyecto presionando el botón **"Go Live"** posicionado en el status bar de VSCode.
+   
    Opción B- Sin la extensión: abra su navegador predeterminado, mantenga la ventana de VSCode en un tamaño reducido y arrastre el archivo **index.html** a la ventana.
 
 4) Navegar por el sitio
