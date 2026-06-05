@@ -57,7 +57,7 @@ h2{
     border-radius: 8px;
 }
 
-input, select, button {
+input, select {
     font-family: 'Los simpsons';
     font-size: 16px;
 }
@@ -70,12 +70,38 @@ input, select, button {
     margin-bottom: 20px;
 }
 
-
-
 .season-select {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-left: 20px;
     width: 150px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.previous, .next {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button {
+    font-family: 'Los simpsons';
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
 }
