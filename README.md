@@ -27,10 +27,11 @@ Asegúrate de tener instalado:
 
 1) Clonar repositorio
    
-   Abra su terminal de prefencia y ejecute el siguiente comando: 
-   ´´´
+   Abra su terminal de prefencia y ejecute el siguiente comando:
+
+   ```bash
    git clone https://github.com/melina-ojeda/thesimponsproject
-   ´´´
+   ```
 
 3) Ingresar al sitio
    
