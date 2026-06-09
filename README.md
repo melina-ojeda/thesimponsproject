@@ -50,18 +50,23 @@ Asegúrate de tener instalado:
 
 Si prefiere ejecutar la aplicación utilizando Docker, primero debe construir la imagen basada en el archivo Dockerfile del proyecto.
 
-Desde la raíz del proyecto corra el comando: 
+Desde la raíz del proyecto corra el comando:
+```bash 
 docker build -t thesimpsonsproject .
+```
 
 # Ejecución del contenedor
 
 Una vez construida la imagen, inicie el contenedor mapeando el puerto 8080 de su máquina local con el siguiente comando:
+```bash
 docker run -d -p 8080:80 --name simpsons-app thesimpsonsproject
-
+```
 Luego de ejecutarlo, abra su navegador y copie la siguiente URL para interactuar con la app:
 **http://localhost:8080**
 
 Si desea detener el contenedor, ejecute el comando:
+```bash
 docker stop simpsons-app
+```
 
 
