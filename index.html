@@ -10,8 +10,8 @@
     <header>
         <h1>The Simpsons Project</h1>
         <h2>A guide with all seasons and their episodes</h2>
-        <input type="text" id="searchInput" placeholder="Search episode..." class="search-bar">
-        <select id="season-select" class="season-select">
+        <input type="text" id="searchInput" placeholder="Search episode..." class="search-bar" oninput="filterEpisodes(this.value)">
+        <select id="season-select" class="season-select" onchange="filterSeason(this.value)">
             <option value="">All Seasons</option>
         </select>
     </header>
