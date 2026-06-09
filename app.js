@@ -41,9 +41,12 @@ function aplicarFiltrosYRenderizar(data) {
     const container = document.getElementById('grilla-episodios');
     container.innerHTML = ''; 
 
-    const episodiosFiltrados = todosLosEpisodiosCargados.filter(ep => 
-        ep.name.toLowerCase().includes(querySearch.toLowerCase())
-    );
+    const episodiosFiltrados = todosLosEpisodiosCargados.filter(ep => {
+      const matchesSearch = ep.name.toLowerCase().includes(querySearch.toLowerCase());
+      const matchesSeason = temporadaActual ? ep.season === parseInt(temporadaActual) : true;
+      return matchesSearch && matchesSeason;
+    }
+);
 
     if (episodiosFiltrados.length > 0) {
         renderEpisodios(episodiosFiltrados);
@@ -94,7 +97,7 @@ function filterEpisodes(valor) {
     aplicarFiltrosYRenderizar({ pages: Math.ceil(todosLosEpisodiosCargados.length / 10) }); 
 }
 
-function filtrarTemporada(valor) {
+function filterSeason(valor) {
     temporadaActual = valor;
     page = 1; 
     fetchEpisodios();
