@@ -69,4 +69,7 @@ Si desea detener el contenedor, ejecute el comando:
 docker stop simpsons-app
 ```
 
+# Capturas de pantalla 
+<img width="1343" height="683" alt="page" src="https://github.com/user-attachments/assets/6260defb-9cee-4708-9134-a2c8ce9ad971" />
+<img width="1267" height="713" alt="Captura" src="https://github.com/user-attachments/assets/e61152a1-8f67-4110-8a65-ec53cbf61c19" />
 
