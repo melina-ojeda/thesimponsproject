@@ -15,7 +15,7 @@ Asegúrate de tener instalado:
 * Git
 * Docker desktop
 * VSCode (recomendado)
-* Extensión VSCode "Live Server"
+* Extensión VSCode "Live Server" (opcional)
 
 # Funcionalidades
 - Visualización de episodios en tarjetas con imagen e información
@@ -38,13 +38,17 @@ Asegúrate de tener instalado:
    
    Opción B- Tradicional: abra su navegador predeterminado y arrastre el archivo **index.html** a la ventana del navegador.
 
-   Opción C- Utilizando Docker
+   Opción C- Utilizando Docker (instrucciones debajo)
 
 4) Navegar por el sitio
    - Explorar las diferentes tarjetas con los episodios
    - Utilizar el buscador para episodios puntuales
    - Filtrar por temporada
    - Navegar entre las páginas utilizando anterior/siguiente 
+
+# Docker
+
+Incluye un archivo **Dockerfile** para servir el proyecto mediante Nginx dentro de un contenedor.
 
 # Contrucción de la imagen Docker
 
@@ -64,9 +68,14 @@ docker run -d -p 8080:80 --name simpsons-app thesimpsonsproject
 Luego de ejecutarlo, abra su navegador y copie la siguiente URL para interactuar con la app:
 **http://localhost:8080**
 
+Para ver el contenedor en ejecución, utilice el comando
+```bash
+docker ps
+```
+
 Si desea detener el contenedor, ejecute el comando:
 ```bash
-docker stop simpsons-app
+docker stop simpsons-project
 ```
 
 
