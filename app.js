@@ -32,7 +32,7 @@ function renderEpisodios(episodios) {
             <p>${ep.synopsis}</p>
             <p>Season: ${ep.season}</p>
             <p>Episode: ${ep.episode_number}</p>
-            <button onclick="guardarFav(${ep.id})">Save as Favorite</button>
+            
         `;
         container.appendChild(card);
     });
